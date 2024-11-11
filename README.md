@@ -151,7 +151,7 @@ train_labels_only = train_dataset.map(lambda text, label: label)
 validation_labels_only = validation_dataset.map(lambda text, label: label)
 
 label_encoder = fit_label_encoder(train_labels_only,validation_labels_only)
-print('Name: Karnan     Register Number: 212222230058    ')
+print('Name: Joyce Beulah R     Register Number: 212222230058    ')
 print(f'Unique labels: {label_encoder.get_vocabulary()}')
 
 def preprocess_dataset(dataset, vectorizer, label_encoder, batch_size=32):
